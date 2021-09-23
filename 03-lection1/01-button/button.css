@@ -8,42 +8,40 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    cursor: pointer;
+    border: 0px;
 }
 
 .btn:disabled {
     opacity: 0.3;
+    pointer-events: none;
 }
 
-.btn-primary {
-    background: #4263EB;
-    border: 0px;
-    color: #FFFFFF;
+.btn_primary {
+    background: var(--blue-2); 
+    color: var(--white);
 }
 
-.btn-primary:hover:not(:disabled) {
-    background: #2342C0;
-    cursor: pointer;
+.btn_primary:hover:not(:disabled) {
+    background: var(--blue-3);
 }
 
-.btn-secondary {
-    background: #7048E8;
-    border: 0px;
-    color: #FFFFFF;
+.btn_secondary {
+    background: var(--purple);
+    color: var(--white);
 }
 
-.btn-secondary:hover:not(:disabled) {
-    background: #5028C6;
-    cursor: pointer;
+.btn_secondary:hover:not(:disabled) {
+    background: var(--blue-4);
 }
 
-.btn-alternate {
-    background:white;
-    border: 1px solid #ACB5BD;
-    color: #495057;
+.btn_alternate {
+    background: var(--white);
+    border: 1px solid var(--grey-3);
+    color: var(--grey-4);
 }
 
-.btn-alternate:hover:not(:disabled) {
-    background: white;
-    cursor: pointer;
-    border: 1px solid #212429;
+.btn_alternate:hover:not(:disabled) {
+    background: var(--white);
+    border: 1px solid var(--black);
 }
