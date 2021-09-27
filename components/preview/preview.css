@@ -1,0 +1,15 @@
+.main {
+    background-color: var(--white-2);
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1110px;
+}
