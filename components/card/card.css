@@ -7,8 +7,11 @@
     display: flex;
     flex-direction:column;
     justify-content: space-between;
-    padding: 30px;
+    padding: 32px 30px;
     align-items: center;
+}
+
+.card__title {
     font: Roboto;
     font-style: normal;
     font-weight: 500;
