@@ -13,11 +13,14 @@
     --blue-2: #4263EB;
     --blue-3: #2342C0;
     --blue-4: #5028C6;
+    --blue-5: #A0B1F5;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #334D6E;
+    --grey-6: #90A0B7;
     --error: var(--red);
     --success: var(--blue);
 
