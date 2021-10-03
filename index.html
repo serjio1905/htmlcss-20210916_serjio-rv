@@ -18,21 +18,18 @@
         <link rel="stylesheet" href="./components/calendar/calendar.css">
     </head>
     <body>
-        <svg>
-            <defs>
-                <symbol id="rect">
-                    <rect width="30" height="30" fill="#212429"/>
-                </symbol>
-                    
-            </defs>
-        </svg>
-        <div class="page">
+       <div class="page">
             <header class="header">
-                <div>
-                    <svg>
-                        <use xlink:href="#rect"></use>
-                    </svg>
+                <div class="header__logo">
+                    <svg class="header__icon"><use xlink:href="./assets/sprite.svg#rect"></use></svg>
+                    <svg class="header__icon"><use xlink:href="./assets/sprite.svg#circle"></use></svg>
+                    <svg class="header__icon"><use xlink:href="./assets/sprite.svg#triangle"></use></svg>
+
+
                 </div>
+                <h1 class="header__title">
+                    Reusable component library
+                </h1>
             </header>
             <main class="main">
 
