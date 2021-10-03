@@ -31,4 +31,19 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    font-size: 10px;
 }
+
+@media screen and (min-width: 481px) and (max-width: 920px) {
+    * {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        font-size: 8px;
+    }
+}
+
+
