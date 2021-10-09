@@ -1,0 +1,62 @@
+.toggle {
+    display: inline-block;
+}
+
+.toggle__label {
+    font: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--grey-4);
+    display: flex;
+    align-items: center;
+}
+
+.toggle__icon {
+    width: 5.2rem;
+    height: 2.8rem;
+    border: 1px solid var(--grey-2);
+    border-radius: 1.6rem;
+    margin-right: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.toggle__circle {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background-color: var(--grey-2);
+}
+
+.toggle__input:checked ~ .toggle__label .toggle__icon {
+    background-color: var(--blue-2);
+    justify-content: flex-end;
+}
+
+.toggle__input:checked ~ .toggle__label .toggle__icon .toggle__circle {
+    background-color: var(--white);
+}
+
+.toggle__input {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.toggle__input:disabled ~ .toggle__label .toggle__icon {
+    background-color: var(--grey-2);
+}
+
+.toggle__input:disabled ~ .toggle__label .toggle__icon .toggle__circle {
+    background-color: var(--grey-3);
+}
+
+.toggle__input:disabled ~ .toggle__label {
+    color: var(--grey-2);
+}
+
