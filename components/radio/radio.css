@@ -1,0 +1,42 @@
+.radio__circle {
+    width: 2.8rem;
+    height: 2.8rem;
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 1.4rem;
+    margin-right: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.radio__label {
+    display: flex;
+    font: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    align-items: center;    
+}
+
+.radio__input {
+    clip: rect(0, 0, 0, 0);
+    opacity: 0;
+}
+
+.radio__input:checked ~ .radio__label .radio__circle {
+    border: 2px solid var(--blue-2);
+}  
+
+.radio__circle_inerr {
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50%;
+    background-color: var(--blue-2);
+    visibility: hidden;
+}
+
+.radio__input:checked ~ .radio__label .radio__circle_inerr {
+    visibility: visible;
+}
