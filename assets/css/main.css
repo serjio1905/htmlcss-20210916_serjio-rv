@@ -7,7 +7,8 @@
     --white-4: #F3F5F5;
     --white-5: #E3E7EA;
     --black: #010202;
-    --black-2: #212429;
+    --black-2: #334D6E;
+    --black-3: #212429;
     --pink: #F784AD;
     --purple: #7048E8;
     --blue: #374FC7;
@@ -22,6 +23,7 @@
     --grey-4: #495057;
     --grey-5: #334D6E;
     --grey-6: #90A0B7;
+    --grey-7: #C4C4C4;
     --error: var(--red);
     --success: var(--blue);
 
