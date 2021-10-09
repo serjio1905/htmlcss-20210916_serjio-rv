@@ -1,7 +1,7 @@
 .radio__circle {
     width: 2.8rem;
     height: 2.8rem;
-    border: 1px solid #DDE2E5;
+    border: 1px solid var(--grey-2);
     box-sizing: border-box;
     border-radius: 1.4rem;
     margin-right: 1.2rem;
@@ -21,11 +21,8 @@
 }
 
 .radio__input {
-    width: 0;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    visibility: hidden;
+    clip: rect(0, 0, 0, 0);
+    opacity: 0;
 }
 
 .radio__input:checked ~ .radio__label .radio__circle {
@@ -42,5 +39,4 @@
 
 .radio__input:checked ~ .radio__label .radio__circle_inerr {
     visibility: visible;
-}  
-  
+}
