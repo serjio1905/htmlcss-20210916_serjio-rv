@@ -2,6 +2,8 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./components/footer/footer.css">
@@ -9,33 +11,154 @@
         <link rel="stylesheet" href="./components/preview/preview.css">
         <link rel="stylesheet" href="./components/page/page.css">
         <link rel="stylesheet" href="./components/card/card.css">
+        <link rel="stylesheet" href="./components/histogram/histogram.css">
+        <link rel="stylesheet" href="./components/button/button.css">
+        <link rel="stylesheet" href="./components/skeleton/skeleton.css">
+        <link rel="stylesheet" href="./components/accordion/accordion.css">
+        <link rel="stylesheet" href="./components/calendar/calendar.css">
     </head>
     <body>
-        <div class="page">
+       <div class="page">
             <header class="header">
+                <div class="header__logo">
+                    <svg class="header__icon"><use xlink:href="./assets/sprite.svg#rect"></use></svg>
+                    <svg class="header__icon"><use xlink:href="./assets/sprite.svg#circle"></use></svg>
+                    <svg class="header__icon"><use xlink:href="./assets/sprite.svg#triangle"></use></svg>
 
+
+                </div>
+                <h1 class="header__title">
+                    Reusable component library
+                </h1>
             </header>
             <main class="main">
 
                 <div class="main__container">
+                    
                     <div class="card">
                         <div class="card__content">
-                            test
+                            <div class="histogram">
+                                <div class="histogram__header">
+                                    <div class="histogram__orders">
+                                        <div class="histogram__orders_title">
+                                            Total orders
+                                        </div>
+                                        <div class="histogram__orders_number">
+                                            50254
+                                        </div>
+                                    </div>
+                                    <div class="histogram__view">
+                                        View all
+                                    </div>
+                                </div>
+                                <div class="histogram__chart">
+                                    <div class="histogram__col" style="height: 100%;"></div>
+                                    <div class="histogram__col" style="height: 40%;"></div>
+                                    <div class="histogram__col" style="height: 80%;"></div>
+                                    <div class="histogram__col" style="height: 60%;"></div>
+                                    <div class="histogram__col" style="height: 20%;"></div>
+                                    <div class="histogram__col" style="height: 60%;"></div>
+                                    <div class="histogram__col" style="height: 40%;"></div>
+                                    <div class="histogram__col" style="height: 100%;"></div>
+                                    <div class="histogram__col" style="height: 10%;"></div>
+                                    <div class="histogram__col" style="height: 40%;"></div>
+                                    <div class="histogram__col" style="height: 60%;"></div>
+                                    <div class="histogram__col" style="height: 20%;"></div>
+                                    <div class="histogram__col" style="height: 100%;"></div>
+                                    <div class="histogram__col" style="height: 20%;"></div>
+                                    <div class="histogram__col" style="height: 80%;"></div>
+                                    <div class="histogram__col" style="height: 20%;"></div>
+                                    <div class="histogram__col" style="height: 70%;"></div>
+                                    <div class="histogram__col" style="height: 60%;"></div>
+                                    <div class="histogram__col" style="height: 40%;"></div>
+                                    <div class="histogram__col" style="height: 60%;"></div>
+                                    <div class="histogram__col" style="height: 70%;"></div>
+                                    <div class="histogram__col" style="height: 20%;"></div>
+                                    <div class="histogram__col" style="height: 80%;"></div>
+                                    <div class="histogram__col" style="height: 70%;"></div>
+                                    <div class="histogram__col" style="height: 80%;"></div>
+                                    <div class="histogram__col" style="height: 20%;"></div>
+                                    <div class="histogram__col" style="height: 60%;"></div>
+                                    <div class="histogram__col" style="height: 25%;"></div>
+                                    <div class="histogram__col" style="height: 60%;"></div>
+                                    <div class="histogram__col" style="height: 40%;"></div>
+                                    <div class="histogram__col" style="height: 50%;"></div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card__title">
                             Histogram
                         </div>
                     </div>
+                    
+                    <div class="card">
+                        <div class="card__content">
+                            <button class="btn btn_primary">
+                                Primary
+                            </button>
+                        </div>
+                        <div class="card__title">
+                            Button
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card__content">
+                            <div class="skeleton">
+                                <div class="skeleton__header">
+                                    <div class="skeleton__circle"></div>
+                                    <div class="skeleton__header_lines">
+                                        <div class="skeleton__line_short"></div>
+                                        <div class="skeleton__line_middle"></div>
+                                    </div>
+                                </div>
+                                <div class="skeleton__footer">
+                                    <div class="skeleton__line_long"></div>
+                                    <div class="skeleton__line_long"></div>
+                    
+                                </div>
+                    
+                            </div>
+                        </div>
+                        <div class="card__title">
+                            Skeleton
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__content">
+                            <details class="accordion">
+                                <summary class="accordion__summary">
+                                    Accordion item
+                                </summary>
+                                <p class="accordion__content">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                </p>
+                            </details>
+                        </div>
+                        <div class="card__title">
+                            Accordion
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__content">
+                            
+                        </div>
+                        <div class="card__title">
+                            Test
+                        </div>
+                    </div>
+
                 </div>
                 
-
+                    
             </main>
+
             <footer class="footer">
                 <div class="footer__title">About</div>
                 <div class="footer__text">
-                    <div class="footer__content">
-                        This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.
-                    </div>
+                    This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.
                 </div>
             </footer>
         </div>

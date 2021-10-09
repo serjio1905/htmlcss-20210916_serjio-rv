@@ -1,3 +1,44 @@
 .header {
-    height: 237px;
+    height: 23.7rem;
+    padding-left: 16.5rem;
+    padding-top: 2.5rem;
+}
+
+.header__logo {
+   
+}
+
+.header__icon {
+    height: 30px;
+    width: 30px;
+    margin-right: .8rem;
+    fill: var(--black-2);
+}
+
+.header__title {
+    font: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 6.4rem;
+    color: var(--bblack-2);
+}
+
+@media screen and (max-width: 720px) {
+    .header {
+        padding-left: 2rem;
+    
+    }
+
+    .header__title {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .header__logo {
+        display: flex;
+        justify-content: center;
+
+    }
 }
