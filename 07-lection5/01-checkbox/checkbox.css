@@ -1,9 +1,5 @@
 .checkbox {
-    width: 2.8rem;
-    height: 2.8rem;
-    box-sizing: border-box;
-    border-radius: .4rem;
-    display: flex;
+    display: inline-block;
 }
 
 .checkbox__label {
