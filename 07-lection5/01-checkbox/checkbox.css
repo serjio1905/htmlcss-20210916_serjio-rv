@@ -28,6 +28,11 @@
     background-color: var(--blue-2);
 }
 
+.checkbox__input:checked ~ .checkbox__label .checkbox__icon .checkbox__svg {
+    display: block;
+    position: absolute;
+}
+
 .checkbox__input {
     visibility: hidden;
     height: 0;
@@ -39,6 +44,7 @@
 .checkbox__svg {
     width: 1.1rem;
     height: .9rem;
+    display: none;
 }
 
 .checkbox__input:disabled ~ .checkbox__label .checkbox__icon {
