@@ -3,7 +3,6 @@
 <html lang="ru">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./components/footer/footer.css">
@@ -21,6 +20,7 @@
         <link rel="stylesheet" href="./components/avatar/avatar.css">
         <link rel="stylesheet" href="./components/tooltip/tooltip.css">
         <link rel="stylesheet" href="./components/modal/modal.css">
+        <link rel="stylesheet" href="./components/tabulator/tabulator.css">
     </head>
     <body>
        <div class="page">
@@ -29,18 +29,36 @@
                     <svg class="header__icon"><use xlink:href="./assets/sprite.svg#rect"></use></svg>
                     <svg class="header__icon"><use xlink:href="./assets/sprite.svg#circle"></use></svg>
                     <svg class="header__icon"><use xlink:href="./assets/sprite.svg#triangle"></use></svg>
-
-
                 </div>
                 <h1 class="header__title">
                     Reusable component library
                 </h1>
+
+                <div class="tabulator">
+                    <div class="tabuator__item">
+                        <input type="radio" id="all_components" class="tabulator__input" name="tabulator" checked>
+                        <label for="all_components" class="tabulator__label">All components</label>
+                    </div>
+                    <div class="tabuator__item">
+                        <input type="radio" id="elements" class="tabulator__input" name="tabulator">
+                        <label for="elements" class="tabulator__label">Elements</label>
+                    </div>
+                    <div class="tabuator__item">
+                        <input type="radio" id="containers" class="tabulator__input" name="tabulator">
+                        <label for="containers" class="tabulator__label">Containers</label>
+                    </div>
+                    <div class="tabuator__item">
+                        <input type="radio" id="templates" class="tabulator__input" name="tabulator">
+                        <label for="templates" class="tabulator__label">Templates</label>
+                    </div>
+                </div>
+
             </header>
             <main class="main">
 
                 <div class="main__container">
                     
-                    <div class="card">
+                    <div class="card" data-tab="containers">
                         <div class="card__content">
                             <div class="histogram">
                                 <div class="histogram__header">
@@ -96,7 +114,7 @@
                         </div>
                     </div>
                     
-                    <div class="card">
+                    <div class="card" data-tab="elements">
                         <div class="card__content card__content_vertical">
                             <button class="btn btn_primary">
                                 Primary
@@ -113,7 +131,7 @@
                         </div>
                     </div>
                     
-                    <div class="card">
+                    <div class="card" data-tab="containers">
                         <div class="card__content">
                             <div class="skeleton">
                                 <div class="skeleton__header">
@@ -136,7 +154,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-tab="containers">
                         <div class="card__content">
                             <details class="accordion">
                                 <summary class="accordion__summary">
@@ -152,7 +170,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-tab="elements">
                         <div class="card__content card__content_vertical">
                             <div class="checkbox">
                                 <input type="checkbox" class="checkbox__input" id="checkbox_1" >
@@ -188,7 +206,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-tab="elements">
                         <div class="card__content card__content_vertical">
                             <div class="radio">
                                 <input type="radio" class="radio__input" id="radio_1" name="radio-group-1" checked>
@@ -217,15 +235,13 @@
                                     Radio 3
                                 </label>
                             </div>
-                    
-                            
                         </div>
                         <div class="card__title">
                             Radio
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-tab="elements">
                         <div class="card__content">
                             <div class="avatar">
                                 <img src="./assets/images/avatar-200.jpg" class="avatar__photo">
@@ -237,7 +253,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-tab="elements">
                         <div class="card__content">
                             <div class="tooltip">
                                 <div class="tooltip__trigger">
@@ -258,7 +274,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-tab="containers">
                         <div class="card__content">
                             <button class="btn btn_primary" id="modal-open">
                                 <span>Open modal</span>
@@ -284,7 +300,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card__content">
+                        <div class="card__content" data-tab="containers">
                             <div class="calendar">
                                 <div class="calendar__title">October 2020</div>
                                 <div class="calendar__wrapper">
@@ -332,19 +348,15 @@
                                         <div class="calendar__item calendar__number">30</div>
                                         <div class="calendar__item calendar__number">31</div>
                                     </div>
-                                </div>
-                    
-                            </div>
-                            
+                                </div>  
+                            </div> 
                         </div>
                         <div class="card__title">
                             Calendar
                         </div>
                     </div>
 
-                </div>
-                
-                    
+                </div>  
             </main>
 
             <footer class="footer">
@@ -353,31 +365,9 @@
                     This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.
                 </div>
             </footer>
+
         </div>
-
-
-        <script>
-            (function() {
-            const close = document.getElementById('modal-close');
-            const modal = document.getElementById('modal');
-            const modalOpen = document.getElementById('modal-open');
-            modal.style.display = 'none';
-            document.body.overflow = 'initial';
-
-            if (!close || !modalOpen || !modal) {
-                return;
-            }
-
-            modalOpen.addEventListener('click', () => {
-                modal.style.display = 'block';
-                document.body.overflow = 'hidden';
-            });
-
-            close.addEventListener('click', () => {
-                modal.style.display = 'none';
-                document.body.overflow = 'initial';
-            });
-        })();
-        </script>
+        <script src="./assets/js/modal.js"></script>
+        <script src="./assets/js/tabulator.js"></script> 
     </body>
 </html>
