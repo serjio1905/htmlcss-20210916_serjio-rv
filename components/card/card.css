@@ -29,6 +29,14 @@
     padding: 0 3rem;
 }
 
+.card__content_vertical {
+    flex-direction: column;
+}
+
+.card__content_vertical > * {
+    margin-bottom: .5rem;
+}
+
 @media screen and (max-width: 480px) {
     .card__content {
         border-bottom: 1px solid var(--grey-2);

@@ -1,0 +1,34 @@
+.tabulator {
+    display: flex;
+    max-width: 100vw;
+    overflow: hidden;
+    height: 3.5rem;
+}
+
+.tabulator__label {
+    font: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--grey-3);
+    cursor: pointer;
+    white-space: nowrap;
+    padding-bottom: .8rem;
+    border-bottom: 0.5rem solid rgba(0, 0, 0, 0);
+}
+
+.tabulator__input {
+    opacity: 0;
+    position: absolute;
+}
+
+.tabuator__item {
+    margin-right: 4rem;
+    height: auto;
+}
+
+.tabulator__input:checked ~ .tabulator__label {
+   color: var(--black);
+   border-color: var(--black);
+}

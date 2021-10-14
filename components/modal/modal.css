@@ -1,0 +1,52 @@
+.modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(196, 196, 196, 0.5);
+}
+
+.modal__content {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: .8rem;
+    width: 42.8rem;
+    height: 29.4rem;
+    padding: 3.0rem 4.0rem 3.3rem 4.0rem ;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 5.0rem);
+}
+
+.modal__close {
+    position: absolute;
+    cursor: pointer;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+.modal__title {
+    font: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.0rem;
+    line-height: 2.4rem;
+    color: var(--black-2);  
+
+}
+
+.modal__text {
+    font: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+
+.modal__close {
+    width: 2rem;
+    height: 2rem;
+    fill: black;
+}
