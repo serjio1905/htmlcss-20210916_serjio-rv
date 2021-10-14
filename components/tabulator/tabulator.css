@@ -14,6 +14,8 @@
     color: var(--grey-3);
     cursor: pointer;
     white-space: nowrap;
+    padding-bottom: .8rem;
+    border-bottom: 0.5rem solid rgba(0, 0, 0, 0);
 }
 
 .tabulator__input {
@@ -28,6 +30,5 @@
 
 .tabulator__input:checked ~ .tabulator__label {
    color: var(--black);
-   border-bottom: 0.5rem solid var(--black);
-   padding-bottom: .8rem;
+   border-color: var(--black);
 }
