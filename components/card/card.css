@@ -34,3 +34,14 @@
         border-bottom: 1px solid var(--grey-2);
     }
 }
+
+.card_vertical {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.card_vertical > * {
+    margin-top: .5rem;
+}

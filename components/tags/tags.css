@@ -1,0 +1,69 @@
+.tag {
+    height: 3.2rem;
+    padding: .7rem 1.6rem .5rem 1.6rem;
+    border-radius: 20rem;
+}
+
+.tag__label {
+    font: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.tag_primary {
+    background-color: var(--pink);
+}
+
+.tag_primary .tag__label {
+    color: var(--black);
+}
+
+.tag_secondary {
+    background-color: var(--purple);
+}
+
+.tag_secondary .tag__label {
+    color: var(--white);
+}
+
+.tag_tertiary {
+    background-color: var(--black);
+}
+
+.tag_tertiary .tag__label {
+    color: var(--white);
+}
+
+.tag_share {
+    background-color: var(--white);
+    border: 1px solid var(--grey-2);
+}
+
+.tag_share .tag__label {
+    color: var(--blue);
+}
+
+.tag_share .tag__icon_wrapper{
+    display: block;
+} 
+
+.tag__icon_wrapper {
+    position: relative;
+    width: 3.2rem;
+    display: none;
+}
+
+.tag__icon {
+    width: 22px;
+    height: 23px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -4px;
+    fill: var(--black);
+}
