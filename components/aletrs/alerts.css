@@ -1,0 +1,50 @@
+.alert {
+    height: 4.8rem;
+    border-radius: .8rem;
+    display: flex;
+    padding: 1.5rem 1.3rem .9rem 1.3rem;  
+    width: 100%;
+}
+
+.alert_error {
+    background-color: #F03D3E10;
+}
+
+.alert_success {
+    background-color:#374FC710 ;
+}
+
+.alert_notification {
+    background-color: #D8491010;
+}
+
+.alert__icon {
+    width: 25px;
+    height: 25px;
+    fill: var(--black);
+}
+
+.alert__text {
+    font: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-left: 1.5rem;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.alert_error .alert__text {
+    color: var(--error);
+} 
+
+.alert_success .alert__text {
+    color: var(--blue);
+}
+
+.alert_notification .alert__text {
+    color: #D84910;
+}
