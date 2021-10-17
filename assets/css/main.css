@@ -29,6 +29,15 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+    --bg-color: var(--white);
+    --bg-color-2: var(--white-2);
+    --text-color: var(--black);
+}
+
+.dark-mode * {
+    --bg-color: var(--black);
+    --bg-color-2: var(--black-3);
+    --text-color: var(--white);
 }
 
 * {

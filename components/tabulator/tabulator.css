@@ -29,6 +29,6 @@
 }
 
 .tabulator__input:checked ~ .tabulator__label {
-   color: var(--black);
-   border-color: var(--black);
+   color: var(--text-color);
+   border-color: var(--text-color);
 }

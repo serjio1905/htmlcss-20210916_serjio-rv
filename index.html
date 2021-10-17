@@ -15,21 +15,45 @@
         <link rel="stylesheet" href="./components/skeleton/skeleton.css">
         <link rel="stylesheet" href="./components/accordion/accordion.css">
         <link rel="stylesheet" href="./components/calendar/calendar.css">
-        <link rel="stylesheet" href="./components/checkbox/checkbox.css">
+        <link rel="stylesheet" href="./components/aletrs/alerts.css">
+        <link rel="stylesheet" href="./components/tabulator/tabulator.css">
         <link rel="stylesheet" href="./components/radio/radio.css">
+        <link rel="stylesheet" href="./components/checkbox/checkbox.css">
         <link rel="stylesheet" href="./components/avatar/avatar.css">
         <link rel="stylesheet" href="./components/tooltip/tooltip.css">
-        <link rel="stylesheet" href="./components/modal/modal.css">
-        <link rel="stylesheet" href="./components/tabulator/tabulator.css">
+        <link rel="stylesheet" href="./components/toggle/toggle.css">
     </head>
     <body>
        <div class="page">
             <header class="header">
-                <div class="header__logo">
-                    <svg class="header__icon"><use xlink:href="./assets/sprite.svg#rect"></use></svg>
-                    <svg class="header__icon"><use xlink:href="./assets/sprite.svg#circle"></use></svg>
-                    <svg class="header__icon"><use xlink:href="./assets/sprite.svg#triangle"></use></svg>
+
+                <div class="header__top">
+                    <div class="header__logo">
+                        <svg class="header__icon"><use xlink:href="./assets/sprite.svg#rect"></use></svg>
+                        <svg class="header__icon"><use xlink:href="./assets/sprite.svg#circle"></use></svg>
+                        <svg class="header__icon"><use xlink:href="./assets/sprite.svg#triangle"></use></svg>
+                    </div>
+                    
+                    <div class="header__btns">
+                        <div class="header__day_night">
+                            <svg class="header__icon"><use xlink:href="./assets/sprite.svg#sun"></use></svg>
+                            <div class="toggle">
+                                <input type="checkbox" class="toggle__input" id="toggle_1" onclick="darkMode()">
+                                <label for="toggle_1" class="toggle__label">
+                                    <div class="toggle__icon">
+                                        <div class="toggle__circle"></div>
+                                    </div>
+                                </label> 
+                            </div>
+                            <svg class="header__icon"><use xlink:href="./assets/sprite.svg#moon"></use></svg>
+                        </div>
+                    </div>
+                    
+
                 </div>
+                
+                
+                
                 <h1 class="header__title">
                     Reusable component library
                 </h1>
@@ -111,6 +135,36 @@
                         </div>
                         <div class="card__title">
                             Histogram
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__content card_vertical">
+                            <div class="alert alert_error">
+                                <svg class="alert__icon"><use xlink:href="./assets/sprite.svg#error"></use></svg>
+                                <div class="alert__text">
+                                    Error: Error Message
+                                </div>
+                                <svg class="alert__icon"><use xlink:href="./assets/sprite.svg#close"></use></svg>
+                            </div>
+                            <div class="alert alert_success">
+                                <svg class="alert__icon"><use xlink:href="./assets/sprite.svg#success"></use></svg>
+                                <div class="alert__text">
+                                    Success: Success Messagev
+                                </div>
+                                <svg class="alert__icon"><use xlink:href="./assets/sprite.svg#close"></use></svg>
+                            </div>
+                            <div class="alert alert_notification">
+                                <svg class="alert__icon"><use xlink:href="./assets/sprite.svg#bell"></use></svg>
+                                <div class="alert__text">
+                                    Notification: Notification Message
+                                </div>
+                                <svg class="alert__icon"><use xlink:href="./assets/sprite.svg#close"></use></svg>
+                            </div>
+                            
+                        </div>
+                        <div class="card__title">
+                            Alerts
                         </div>
                     </div>
                     
@@ -368,6 +422,7 @@
 
         </div>
         <script src="./assets/js/modal.js"></script>
-        <script src="./assets/js/tabulator.js"></script> 
+        <script src="./assets/js/tabulator.js"></script>
+        <script src="./assets/js/dark-mode.js"></script>
     </body>
 </html>
